@@ -1,10 +1,10 @@
 <?php
 
-namespace gionnivaleriana;
+namespace gionnivaleriana\laravelAdminlte;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelAdminlteServiceProvider extends ServiceProvider {
+class AdminlteServiceProvider extends ServiceProvider {
 
     /**
      * Register the service provider.
@@ -12,11 +12,11 @@ class LaravelAdminlteServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        $this->app->bindShared('gionnivaleriana\laraveladminlte', function ($app) {
-            return app('\gionnivaleriana\laraveladminlte');
+        $this->app->bindShared('gionnivaleriana\laravelAdminlte\Adminlte', function ($app) {
+            return app('\gionnivaleriana\laravelAdminlte\Adminlte');
         }
         );
-        $this->app->singleton('adminlte', 'gionnivaleriana\laraveladminlte');
+        $this->app->singleton('adminlte', 'gionnivaleriana\laravelAdminlte\Adminlte');
     }
 
     public function boot() {

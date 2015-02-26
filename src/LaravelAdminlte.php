@@ -1,9 +1,9 @@
 <?php
 
 
-namespace gionnivaleriana;
+namespace gionnivaleriana\laravelAdminlte;
 
 
-class LaravelAdminlte {
+class Adminlte {
 
 }
