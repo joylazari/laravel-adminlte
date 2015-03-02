@@ -19,7 +19,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-0": {
-      "gionnivaleriana\\laravelAdminlte\\Adminlte": "src/"
+      "gionnivaleriana\\laravelAdminlte": "src/"
     }
   }
 }
