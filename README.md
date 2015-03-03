@@ -57,7 +57,8 @@ return [
 Work in progress
 ----------------
 - [x] Override views
-- [ ] Override Sleeping Owl's Menu render
+- [x] Override menu renderer
+- [ ] Override assets
 
 Author
 ======

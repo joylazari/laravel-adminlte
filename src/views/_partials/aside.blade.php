@@ -27,7 +27,7 @@
         <ul class="sidebar-menu">
             <li class="header">MENU</li>
             @foreach ($menu as $item)
-                {!! $item->render() !!}
+                {!! Adminlte::render($item) !!}
             @endforeach
         </ul>
     </section>
