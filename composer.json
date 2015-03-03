@@ -1,5 +1,5 @@
 {
-  "name": "GionniValeriana/laravel-adminlte",
+  "name": "gionnivaleriana/laravel-adminlte",
   "description": "Almsaeed's AdminLTE Template for Sleeping Owl Admin Generator plugin for Laravel 5",
   "require": {
     "php": ">=5.4.0",
