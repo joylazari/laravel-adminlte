@@ -14,6 +14,7 @@
     <style>
         /* Override SleepingOwl all.min.css conflicts */
         .sidebar { width: inherit; margin-top: inherit; }
+        .sidebar ul li { border: none; }
     </style>
 
     @include('adminlte::_layout.css')
