@@ -1,4 +1,4 @@
-Laravel AdminLTE
+Laravel AdminLTE [![Build Status](https://travis-ci.org/gionnivaleriana/laravel-adminlte.svg)](https://travis-ci.org/gionnivaleriana/laravel-adminlte)
 ================
 An Almsaeed's AdminLTE template built for Sleeping Owl's Admin, an administrative interface builder for Laravel 5.
 
