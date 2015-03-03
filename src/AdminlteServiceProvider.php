@@ -1,6 +1,6 @@
 <?php
 
-namespace gionnivaleriana\laravelAdminlte;
+namespace GionniValeriana\laravelAdminlte;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
  * Class AdminlteServiceProvider
  *
  * @author  Joy Lazari <joy.lazari@gmail.com>
- * @package gionnivaleriana\laravelAdminlte
+ * @package GionniValeriana\laravelAdminlte
  */
 class AdminlteServiceProvider extends ServiceProvider {
 
@@ -18,18 +18,18 @@ class AdminlteServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
-        $this->app->bindShared('gionnivaleriana\laravelAdminlte\Adminlte', function ($app) {
-            return app('\gionnivaleriana\laravelAdminlte\Adminlte');
+        $this->app->bindShared('GionniValeriana\laravelAdminlte\Adminlte', function ($app) {
+            return app('\GionniValeriana\laravelAdminlte\Adminlte');
         }
         );
-        $this->app->singleton('adminlte', 'gionnivaleriana\laravelAdminlte\Adminlte');
+        $this->app->singleton('adminlte', 'GionniValeriana\laravelAdminlte\Adminlte');
     }
 
     public function boot() {
         $this->loadViewsFrom(__DIR__ . '/views', 'adminlte');
 
         $this->publishes([
-            base_path().'/vendor/almasaeed2010/adminlte/' => public_path('packages/gionnivaleriana/adminlte/'),
+            base_path().'/vendor/almasaeed2010/adminlte/' => public_path('packages/GionniValeriana/adminlte/'),
         ], 'assets');
     }
 

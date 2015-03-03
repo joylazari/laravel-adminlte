@@ -1,5 +1,5 @@
 {
-  "name": "gionnivaleriana/laravel-adminlte",
+  "name": "GionniValeriana/laravel-adminlte",
   "description": "Almsaeed's AdminLTE Template for Sleeping Owl Admin Generator plugin for Laravel 5",
   "require": {
     "php": ">=5.4.0",
@@ -13,14 +13,14 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "gionnivaleriana",
+      "name": "Joy Lazari (gionnivaleriana)",
       "email": "joy.lazari@gmail.com"
     }
   ],
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "gionnivaleriana\\laravelAdminlte\\": "src/"
+      "GionniValeriana\\laravelAdminlte\\": "src/"
     }
   }
 }

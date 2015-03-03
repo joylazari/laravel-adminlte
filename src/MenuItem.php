@@ -1,6 +1,6 @@
 <?php
 
-namespace gionnivaleriana\laravelAdminlte;
+namespace GionniValeriana\laravelAdminlte;
 
 use SleepingOwl\Admin\Admin;
 use SleepingOwl\Admin\Menu\MenuItem as BaseMenuItem;
@@ -9,7 +9,7 @@ use SleepingOwl\Admin\Menu\MenuItem as BaseMenuItem;
  * Class MenuItem
  *
  * @author  Joy Lazari <joy.lazari@gmail.com>
- * @package gionnivaleriana\laravelAdminlte
+ * @package GionniValeriana\laravelAdminlte
  */
 class MenuItem {
 
