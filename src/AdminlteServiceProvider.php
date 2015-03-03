@@ -29,7 +29,7 @@ class AdminlteServiceProvider extends ServiceProvider {
         $this->loadViewsFrom(__DIR__ . '/views', 'adminlte');
 
         $this->publishes([
-            base_path().'/vendor/almasaeed2010/adminlte/' => public_path('packages/GionniValeriana/adminlte/'),
+            base_path().'/vendor/almasaeed2010/adminlte/' => public_path('packages/almasaeed2010/adminlte/'),
         ], 'assets');
     }
 
