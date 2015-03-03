@@ -2,12 +2,6 @@ Laravel AdminLTE
 ================
 An Almsaeed's AdminLTE template built for Sleeping Owl's Admin, an administrative interface builder for Laravel 5.
 
-Built with & for
-================
-* [Laravel 5](http://github.com/laravel/laravel) by Taylor Otwell
-* [Admin](http://github.com/sleeping-owl/admin) by Sleeping Owl
-* [AdminLTE](http://github.com/almasaeed2010/AdminLTE) by Abdullah Almsaeed
-
 Installation
 ============
 
@@ -80,11 +74,11 @@ Then publish the assets (css, js..) to your public folder with the command
 $ php artisan vendor:publish
 ```
 
-Work in progress
-----------------
-- [x] Override views
-- [x] Override menu renderer
-- [ ] Override assets
+Built with & for
+================
+* [Laravel 5](http://github.com/laravel/laravel) by Taylor Otwell
+* [Admin](http://github.com/sleeping-owl/admin) by Sleeping Owl
+* [AdminLTE](http://github.com/almasaeed2010/AdminLTE) by Abdullah Almsaeed
 
 Author
 ======
