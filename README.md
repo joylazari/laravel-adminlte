@@ -4,9 +4,9 @@ An Almsaeed's AdminLTE template built for Sleeping Owl's Admin, an administrativ
 
 Built with & for
 ================
-* [Laravel 5](/laravel/laravel) by Taylor Otwell
-* [Admin](/sleeping-owl/admin) by Sleeping Owl
-* [AdminLTE](/almasaeed2010/AdminLTE) by Abdullah Almsaeed
+* [Laravel 5](http://github.com/laravel/laravel) by Taylor Otwell
+* [Admin](http://github.com/sleeping-owl/admin) by Sleeping Owl
+* [AdminLTE](http://github.com/almasaeed2010/AdminLTE) by Abdullah Almsaeed
 
 Installation
 ============
@@ -52,6 +52,32 @@ return [
     ],
     
 ];
+```
+
+Step 3: Use the package
+-----------------------
+
+To use the package/template overriding the default one by Sleeping Owl, modify the following line in the `app/admin.php` file of your project:
+
+The `app/admin.php` file is generated during the Sleeping Owl's Admin package installation by the command `admin:install`.
+
+```php
+<?php
+// app/admin.php
+
+return [
+    
+    // ...
+
+    'bladePrefix' => 'adminlte::',
+    
+];
+```
+
+Then publish the assets (css, js..) to your public folder with the command
+
+```bash
+$ php artisan vendor:publish
 ```
 
 Work in progress

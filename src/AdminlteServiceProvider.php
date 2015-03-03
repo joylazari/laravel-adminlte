@@ -4,6 +4,12 @@ namespace gionnivaleriana\laravelAdminlte;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class AdminlteServiceProvider
+ *
+ * @author  Joy Lazari <joy.lazari@gmail.com>
+ * @package gionnivaleriana\laravelAdminlte
+ */
 class AdminlteServiceProvider extends ServiceProvider {
 
     /**
@@ -23,9 +29,8 @@ class AdminlteServiceProvider extends ServiceProvider {
         $this->loadViewsFrom(__DIR__ . '/views', 'adminlte');
 
         $this->publishes([
-                             __DIR__ . '/views' => base_path('resources/views/vendor/adminlte'),
-                         ]
-        );
+            base_path().'/vendor/almasaeed2010/adminlte/' => public_path('packages/gionnivaleriana/adminlte/'),
+        ], 'assets');
     }
 
 }
