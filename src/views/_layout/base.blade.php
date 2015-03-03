@@ -24,5 +24,7 @@
 </head>
 <body class="skin-red">
     @yield('content')
+
+    @include('adminlte::_layout.js')
 </body>
 </html>
