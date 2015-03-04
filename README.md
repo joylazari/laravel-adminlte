@@ -1,5 +1,12 @@
-Laravel AdminLTE [![Build Status](https://travis-ci.org/gionnivaleriana/laravel-adminlte.svg)](https://travis-ci.org/gionnivaleriana/laravel-adminlte)
+Laravel AdminLTE
 ================
+[![Build Status](https://travis-ci.org/gionnivaleriana/laravel-adminlte.svg)](https://travis-ci.org/gionnivaleriana/laravel-adminlte)
+[![Latest Stable Version](https://poser.pugx.org/gionnivaleriana/laravel-adminlte/v/stable.svg)](https://packagist.org/packages/gionnivaleriana/laravel-adminlte) 
+[![Total Downloads](https://poser.pugx.org/gionnivaleriana/laravel-adminlte/downloads.svg)](https://packagist.org/packages/gionnivaleriana/laravel-adminlte) 
+[![Latest Unstable Version](https://poser.pugx.org/gionnivaleriana/laravel-adminlte/v/unstable.svg)](https://packagist.org/packages/gionnivaleriana/laravel-adminlte) 
+[![License](https://poser.pugx.org/gionnivaleriana/laravel-adminlte/license.svg)](https://packagist.org/packages/gionnivaleriana/laravel-adminlte)
+[![HHVM Status](http://hhvm.h4cc.de/badge/gionnivaleriana/laravel-adminlte.svg)](http://hhvm.h4cc.de/package/gionnivaleriana/laravel-adminlte)
+
 An Almsaeed's AdminLTE template built for Sleeping Owl's Admin, an administrative interface builder for Laravel 5.
 
 Installation
