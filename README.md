@@ -38,7 +38,7 @@ return [
 
         // ...
 
-        'GionniValeriana\LaravelAdminlteServiceProvider',
+        'GionniValeriana\laravelAdminlte\AdminlteServiceProvider',
 
     ],
     
@@ -48,7 +48,7 @@ return [
     
         // ...
     
-        'Adminlte' => 'GionniValeriana\laraveladminlte',
+        'Adminlte' => 'GionniValeriana\laravelAdminlte\Adminlte',
     
     ],
     
