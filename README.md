@@ -9,6 +9,11 @@ Laravel AdminLTE
 
 An Almsaeed's AdminLTE template built for Sleeping Owl's Admin, an administrative interface builder for Laravel 5.
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Requirements](#requirements)
+- [Author](#author)
+
 Installation
 ============
 
@@ -81,8 +86,83 @@ Then publish the assets (css, js..) to your public folder with the command
 $ php artisan vendor:publish
 ```
 
-Built with & for
-================
+Usage
+=====
+Let's start creating a "Start Page" menu item as described in [Sleeping Owl's doc](http://sleeping-owl.github.io/en/Getting_Started/Menu_Configuration.html).
+
+```php
+// app/admin/menu.php
+
+Admin::menu()->url('/')
+             ->label('Start Page')
+             ->icon('fa-dashboard')
+             ->uses('\App\HTTP\Controllers\AdminController@getIndex');
+
+```
+
+Standard blank page
+-------------------
+To view the standard blank page from this package, in `\App\HTTP\Controllers\AdminController` the method `AdminController::getIndex()` should return this:
+
+```php
+// app/Http/Controllers/AdminController.php
+
+class AdminController extends \SleepingOwl\Admin\Controllers\AdminController {
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function getIndex() {
+        return view('adminlte::blank');
+    }
+    
+    // ...
+    
+```
+
+Custom page/view
+----------------
+To use instead a custom view, let's create a new one in the view folder (default in `resources/views`)
+ 
+```html
+// resources/views/customPage.blade.php
+
+@section('innerContent')
+    <section class="content-header">
+        <h1>Custom Page</h1>
+        <ol class="breadcrumb">
+            <li class="active"><i class="fa fa-dashboard"></i> Home</li>
+        </ol>
+    </section>
+    <section class="content">
+    
+        // ...
+        
+    </section>
+@stop
+
+```
+
+Then return it in `AdminController::getIndex()`
+
+```php
+// app/Http/Controllers/AdminController.php
+
+class AdminController extends \SleepingOwl\Admin\Controllers\AdminController {
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function getIndex() {
+        return view('customPage');
+    }
+    
+    // ...
+    
+```
+
+Requirements
+============
 * [Laravel 5](http://github.com/laravel/laravel) by Taylor Otwell
 * [Admin](http://github.com/sleeping-owl/admin) by Sleeping Owl
 * [AdminLTE](http://github.com/almasaeed2010/AdminLTE) by Abdullah Almsaeed
