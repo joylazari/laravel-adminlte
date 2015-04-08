@@ -24,7 +24,7 @@
         </form>
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
-        <ul class="sidebar-menu">
+        <ul class="sidebar-menu" id="side-menu">
             <li class="header">MENU</li>
             @foreach ($menu as $item)
                 {!! Adminlte::render($item) !!}

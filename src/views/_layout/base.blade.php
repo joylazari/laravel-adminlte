@@ -15,6 +15,7 @@
         /* Override SleepingOwl all.min.css conflicts */
         .sidebar { width: inherit; margin-top: inherit; }
         .sidebar ul li { border: none; }
+        .sidebar ul li a.active { background-color: transparent; }
     </style>
 
     @include('adminlte::_layout.css')
