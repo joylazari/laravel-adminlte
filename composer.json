@@ -5,7 +5,7 @@
     "php": ">=5.4.0",
     "laravel/framework": "~5.0",
     "sleeping-owl/admin": "~2.0",
-    "almasaeed2010/adminlte": "2.0.0"
+    "almasaeed2010/adminlte": "~2.*"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.5"
