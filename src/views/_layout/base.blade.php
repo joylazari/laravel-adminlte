@@ -25,7 +25,7 @@
     <![endif]-->
 
   </head>
-  <body class="skin-red fixed">
+  <body class="{{ $adminBody or 'skin-red' }}">
     @yield('content')
 
   @foreach (\SleepingOwl\Admin\AssetManager\AssetManager::scripts() as $script)

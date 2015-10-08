@@ -7,7 +7,6 @@ use SleepingOwl\Admin\Menu\MenuItem as BaseMenuItem;
 
 /**
  * Class MenuItem
- *
  * @author  Joy Lazari <joy.lazari@gmail.com>
  * @package GionniValeriana\laravelAdminlte
  */
@@ -19,8 +18,8 @@ class MenuItem {
     protected $menuItem;
 
     public function __construct(BaseMenuItem $menuItem) {
-        $this->menuItem    = $menuItem;
-        $admin             = Admin::instance();
+        $this->menuItem = $menuItem;
+        $admin = Admin::instance();
         $this->htmlBuilder = $admin->htmlBuilder;
     }
 
@@ -33,12 +32,10 @@ class MenuItem {
             $content = $this->htmlBuilder->tag('i', [
                     'class' => [
                         'fa',
-                        'fa-fw',
                         $this->menuItem->getIcon()
                     ]
-                ]
-            );
-            $content .= ' ' . $this->menuItem->getLabel() . $this->htmlBuilder->tag('span', ['class' => 'fa arrow']);
+                ]);
+            $content .= ' ' . $this->htmlBuilder->tag('span', [], $this->menuItem->getLabel()) . $this->htmlBuilder->tag('i', ['class' => 'fa fa-angle-left pull-right']);
             $content = $this->htmlBuilder->tag('a', ['href' => '#'], $content);
 
             $subitemsContent = '';
@@ -46,22 +43,24 @@ class MenuItem {
                 $subitemsContent .= $item->render($level);
             }
             $content .= $this->htmlBuilder->tag('ul', ['class' => 'treeview-menu'], $subitemsContent);
-        } else {
+
+            $attr = ['class' => ['treeview']];
+        }
+        else {
+            $attr = [];
             $content = $this->renderSingleItem();
         }
-        return $this->htmlBuilder->tag('li', [], $content);
+        return $this->htmlBuilder->tag('li', $attr, $content);
     }
 
     protected function renderSingleItem() {
         $content = $this->htmlBuilder->tag('i', [
                 'class' => [
                     'fa',
-                    'fa-fw',
                     $this->menuItem->getIcon()
                 ]
-            ]
-        );
-        $content .= ' ' . $this->menuItem->getLabel();
+            ]);
+        $content .= ' ' . $this->htmlBuilder->tag('span', [], $this->menuItem->getLabel());
         return $this->htmlBuilder->tag('a', ['href' => $this->menuItem->getUrl()], $content);
     }
 

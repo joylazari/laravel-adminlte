@@ -6,7 +6,6 @@ use SleepingOwl\Admin\Menu\MenuItem as BaseMenuItem;
 
 /**
  * Class Adminlte
- *
  * @author  Joy Lazari <joy.lazari@gmail.com>
  * @package GionniValeriana\laravelAdminlte
  */

@@ -3,7 +3,10 @@
 @section('content')
 	<div class="wrapper">
         <header class="main-header">
-            <a class="navbar-brand logo" href="{{ Admin::instance()->router->routeHome() }}">{{{ $adminTitle }}}</a>
+            <a class="navbar-brand logo" href="{{ Admin::instance()->router->routeHome() }}">
+              <span class="logo-lg">{!! $adminTitleLg or $adminTitle !!}</span>
+              <span class="logo-mini">{!! $adminTitleMini or preg_replace('~[^A-Z]~', '', $adminTitle) !!}</span>
+            </a>
             <nav class="navbar navbar-static-top" role="navigation">
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
